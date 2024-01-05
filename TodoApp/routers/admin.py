@@ -5,7 +5,7 @@ from fastapi import APIRouter, Depends, HTTPException, Path
 from starlette import status
 from TodoApp.models import Todos
 from TodoApp.database import SessionLocal
-from .auth import get_current_user
+
 
 router = APIRouter(
     prefix='/admin',
